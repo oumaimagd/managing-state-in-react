@@ -11,7 +11,7 @@ const TaskList = ({ tasks, onDeleteTask, onCompleteTask, onEditTask }) => {
       <div className="title">
         {activeTasks.map((task) => (
           <TaskItem
-            key={task.id} // Ajoutez cette ligne pour donner une clé unique à chaque tâche
+            key={task.id} 
             task={task}
             onDeleteTask={onDeleteTask}
             onCompleteTask={onCompleteTask}
@@ -23,7 +23,7 @@ const TaskList = ({ tasks, onDeleteTask, onCompleteTask, onEditTask }) => {
       <div className="title">
         {completedTasks.map((task) => (
           <TaskItem
-            key={task.id} // Ajoutez cette ligne pour donner une clé unique à chaque tâche
+            key={task.id}
             task={task}
             onDeleteTask={onDeleteTask}
             onCompleteTask={onCompleteTask}
